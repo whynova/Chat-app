@@ -6,6 +6,10 @@ const userRoute = require("./routes/userRoute");
 
 const cors = require('cors');
 
+const corsOptions = {
+    origin: 'http://localhost:5173' // Replace with your allowed origin
+  };
+
 app.use(express.json());
 app.use(cors());
 app.use("/api/users",userRoute);

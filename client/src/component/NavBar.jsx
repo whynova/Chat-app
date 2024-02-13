@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-
+import bg from "../assets/pexels-photo-1568607.jpeg"
 const NavBar = () => {
     return (
         <>
-            <nav class="h-full w-full bg-yellow-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100 ">
-                <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+              <div  style={{backgroundImage: `url(${bg})`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
+              <div class=" flex flex-wrap items-center justify-between mx-auto p-4 bg-blue-200 rounded-md bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-10 " >
                     <Link to='/'>
                     <span class="self-center text-2xl font-semibold whitespace-nowrap">Talker</span>
                     </Link>
@@ -29,7 +29,11 @@ const NavBar = () => {
                         </ul>
                     </div>
                 </div>
-            </nav>
+            
+              </div>
+                
+            
+            
 
         </>
     );

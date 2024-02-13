@@ -35,6 +35,9 @@ const Login = () => {
                             <p class="text-sm font-light text-gray-500 dark:text-gray-400">
                                 Dont have an account yet? <Link to='/register' class="font-medium text-primary-600 hover:underline dark:text-primary-500">Register</Link>
                             </p>
+                            <h1 class="text-lg font-semibold leading-tight tracking-tight text-red-600 md:text-2xl">
+                            An error has occurred !!!!!
+                            </h1>
                         </form>
                     </div>
                 </div>
